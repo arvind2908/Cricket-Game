@@ -4,7 +4,6 @@ var c=0;
 var d=0;
 
 var balls = 0;
-
 var wickets = 0;
 var target = 0;
 
@@ -12,63 +11,54 @@ var india_runs=0;
 var aus_runs=0;
 var indRunEle = document.getElementById("ind_runs");
 var ausRunEle = document.getElementById("aus_runs");
-
 var wicketEle = document.getElementById("wickets");
 var ballsEle = document.getElementById("balls");
-
 var indiaBtn = document.getElementById("india");
 
 var ausBtn = document.getElementById("aus");
-
 var indiaBatFirst = false;
 var ausBatFirst = false;
 
 function toss(){
     var a = Math.round(Math.random());
     if(a==0){
-        alert("INDIA won the Toss!!!\n\nChoose your willing option (Bat/Field)...");
+        window.alert("INDIA won the Toss!!!\n\nChoose your willing option (Bat/Field)...");
         b=b+1;
     }
     else{
-        alert("AUSTRALIA won the Toss!!!\n\nChoose your willing option (Bat/Field)...");
+        window.alert("AUSTRALIA won the Toss!!!\n\nChoose your willing option (Bat/Field)...");
     }
 }   
 function bat(){
     if(b==1){
-        alert("INDIA choose to Bat first...");
+        window.alert("INDIA choose to Bat first...");
         indiaBatFirst = true;
         ausBtn.setAttribute("disabled", true);
         b=0;
     }
     else{
-        alert("AUSTRALIA choose to Bat first...");
+        window.alert("AUSTRALIA choose to Bat first...");
         indiaBtn.setAttribute("disabled", true);
         ausBatFirst = true;
     }
 }
 function field(){
     if(b==1){
-        alert("INDIA choose to Field first...");
+        window.alert("INDIA choose to Field first...");
         indiaBtn.setAttribute("disabled", true);
         ausBatFirst = true;
         b=0;
     }
     else{
-        alert("AUSTRALIA choose to Field first...");
+        window.alert("AUSTRALIA choose to Field first...");
         ausBtn.setAttribute("disabled", true);
         indiaBatFirst = true;
 
     }
 }
-function startmatch(){
-    alert("Press 'OK' to START MATCH!!!...");
-}
-
-
 
 
 const scoreRuns =  (team) => {
-    //console.log("hi");
     let score = getRandomScore();
 
     balls+=1;
@@ -76,7 +66,7 @@ const scoreRuns =  (team) => {
     ballsEle.innerHTML = balls;
 
     if (team === 1) {
-        if (balls === 4) {
+        if (balls === 13) {
             balls = 0;
             wickets = 0;
             wicketEle.innerHTML = wickets;
@@ -121,23 +111,19 @@ const scoreRuns =  (team) => {
         }
         indRunEle.innerHTML = india_runs;
     } else {
-        if (balls === 4) {
+        if (balls === 13) {
             balls = 0;
             wickets = 0;
             wicketEle.innerHTML = wickets;
             ballsEle.innerHTML = balls;
             indiaBtn.removeAttribute("disabled");
             ausBtn.setAttribute("disabled", true);
-            console.log(indiaBatFirst);
             if (indiaBatFirst === true) {
-                console.log("hi");
                 if (aus_runs >= target) {
-                console.log("hi2");
                     window.alert(`2 overs completed. Australia won the match.`);
                     window.location.reload();
                     return
                 }
-                console.log("hi3");
                 window.alert(`2 overs completed. Australia lost the match`);
                 window.location.reload();
                 return
@@ -181,7 +167,5 @@ const getRandomScore = () => {
     while(values.indexOf(random) == -1) {
         random = Math.floor(Math.random() * 10);
     }
-
     return random;
-    
 }
