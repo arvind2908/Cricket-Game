@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICC World Cricket League</title>
+    <link rel="icon" href="images/icc.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.js">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <img src="images/outfield.jpg" id="stadium">
+        <img src="images/icc.png" id="icclogo">
+        <h1>ICC WORLD Cricket League-2021</h1>
+        <h2>IND vs AUS</h2>
+        <h3 class="dup">Wicket : <span id = "wickets">0</span></h3>
+        <h3 class="dup1">Balls : <span id = "balls">0</span></h3>
+
+        <button onclick="startmatch()" id="startmatch">Start Match</button>
+            <div id="box1">
+                <img src="images/india.png"  id="indialogo" class="indialogo">
+                <h1 id="runsindia">Runs : <span id="ind_runs">0</span></h1>
+                <div id="runindia">
+                    <button class="disable" id="india" onclick="scoreRuns(1)" >Click to score</button>
+                </div>
+            </div>
+            
+            <div id="box2">
+                <img src="images/aus.png"   id="auslogo" class="auslogo">
+                <h1 id="runsaus">Runs : <span id="aus_runs">0</span></h1>
+                <div id="runaus">
+                    <button class="disable" id="aus" onclick="scoreRuns(2)">Click to score</button>
+                </div>  
+            </div>
+        <button onclick="toss()" id="select"><img src="images/toss.gif" alt="toss" id="coin" style="width: 220px;"></button>
+        <button onclick="bat()" id="bat">Bat</button>
+        <button onclick="field()" id="field">Field</button>
+    </div>   
+</body>
+<script type="text/javascript" src="app.js"></script>
+</html>

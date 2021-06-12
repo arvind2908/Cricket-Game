@@ -1,0 +1,348 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main{
+    margin-top: 1px;
+    margin-left: -47px;
+    padding: 0px;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 95px;
+    font-weight: bold;
+    color:#113300;
+    text-align: center;
+    margin-left: 1170px;
+    margin-top: 0px;
+    position: absolute;
+    font-style: normal;
+}
+
+h2{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 75px;
+    font-weight: bold;
+    color:#194d00;
+    text-align: center;
+    margin-left: 1775px;
+    margin-top: 270px;
+    z-index: 999;
+    position: absolute;
+    font-style: normal;
+}
+
+.dup{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 75px;
+    font-weight: bold;
+    color:#194d00;
+    text-align: center;
+    margin-left: 1775px;
+    margin-top: 350px;
+    z-index: 999;
+    position: absolute;
+    font-style: normal;
+}
+
+.dup1{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 75px;
+    font-weight: bold;
+    color:#194d00;
+    text-align: center;
+    margin-left: 1775px;
+    margin-top: 470px;
+    z-index: 999;
+    position: absolute;
+    font-style: normal;
+}
+
+#startmatch{
+    margin-top: 1600px;
+    margin-left: 1880px;
+    width: 550px;
+    height: 200px;
+    color:#ffffff;
+    background: linear-gradient(to left, #66cc00, #8fda45 ); 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: rgb(255, 255, 255) 10px solid;
+    border-radius: 50px;
+}
+
+#startmatch:hover{
+    font-size: 60px;
+    cursor: pointer;
+}
+
+#startmatch:focus{
+    outline:none;
+    cursor: pointer;
+}
+
+#select{
+    width: 110.9px;
+    height: 110px;
+    border-radius: 360px;
+    position: absolute;
+    z-index: 999;
+    margin-top: 550px;
+    margin-left: 190px;
+    border: rgb(228, 215, 144) 125px solid;
+}
+
+#select:hover{
+    cursor: pointer;
+}
+#select img{
+    width: 108px;
+    height: 227px;
+    margin-left: -110.5px;
+    margin-top: -111.5px;
+    border-radius: 340px;
+    position: relative;
+}
+
+#select:focus{
+    outline: none;
+    cursor: pointer;
+}
+
+#bat{
+    width: 300px;
+    height: 150px;
+    border:rgb(255, 255, 255) 10px solid;
+    background: linear-gradient(to left, 	#ff6b6f, #ff6bff) ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90px;
+    font-weight: bold;
+    margin-top: 950px;
+    margin-left: 185px;
+    position: absolute;
+    padding: 9px;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#bat:hover{
+    font-size: 350%;
+    cursor: pointer;
+}
+#bat:focus{
+    outline: none;
+    cursor: pointer;
+}
+
+#field{
+    width: 300px;
+    height: 150px;
+    border:rgb(255, 255, 255) 10px solid;
+    background: linear-gradient(to left, 	#ff6b6f, #ff6bff) ;;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90px;
+    font-weight: bold;
+    margin-top: 1250px;
+    margin-left: 190px;
+    position: absolute;
+    padding: 9px;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#field:hover{
+    font-size: 350%;
+    cursor: pointer;
+}
+#field:focus{
+    outline: none;
+    cursor: pointer;
+}
+
+.main #stadium{
+    height: 1904px;
+    width: 4145px;
+    position: absolute;
+    background-size: 100px;
+}
+
+.main #icclogo{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 120px;
+}
+
+#box1{
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 800px;
+    width: 1150px;
+    height: 1100px;
+    background-color: rgb(122, 156, 97);
+    opacity: 0.6;
+    border-radius:100px;
+}
+
+#box1:hover{
+    opacity: 0.9;
+    background-color: rgb(35, 58, 126);
+}
+
+#box1 #india{
+    margin-left: 120px;
+    margin-top: 500px;
+    z-index: 1;
+}
+
+.indialogo{
+    width: 750px;
+    height: 730px;
+}
+
+#box1 #indialogo{
+    margin-left: 230px;
+    margin-top: -50px;
+    z-index: 1;
+}
+
+#box1 h1{
+    margin-top: -60px;
+    margin-left: 400px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: #b3b3ff;
+    text-shadow: -8px 0 #000066, 0 8px #000066,8px 0 #000066, 0 -8px #000066;
+}
+
+#box1 #runindia{
+    margin-top: -370px;
+    margin-left: -5px;
+    margin-right: 30px;
+}
+
+#box h3{
+    margin-top: -60px;
+    margin-left: 400px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: #b3b3ff;
+    text-shadow: -8px 0 #000066, 0 8px #000066,8px 0 #000066, 0 -8px #000066;
+}
+
+#box1 #wicindia{
+    margin-top: -100px;
+    margin-left: -5px;
+    margin-right: 30px;
+}
+
+#runindia button{
+    background-color: white;
+    width: 120px;
+    height: 110px;
+    border-radius: 30px;
+    border: white 2px solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: royalblue;
+    margin: -40px;
+}
+
+#runindia button:hover{
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+}
+
+#runindia button:focus{
+    outline:none;
+    cursor: pointer;
+}
+
+.box2 {
+    position: absolute;
+    bottom: 0;
+}
+
+#box2{
+    position: absolute;
+    margin-top: 390px;
+    margin-left: 2350px;
+    width: 1150px;
+    height: 1100px;
+    background-color: rgb(122, 156, 97);
+    opacity: 0.6;
+    border-radius:100px;
+}
+
+#box2:hover{
+    opacity: 0.9;
+    background-color: rgb(231, 231, 24);
+}
+
+#box2 #aus{
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+#box2 h1{
+    margin-top: -70px;
+    margin-left: 400px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: #ffffb3;
+    text-shadow: -6px 0 rgb(255, 255, 0), 0 6px rgb(255, 255, 0), 6px 0 rgb(255, 255, 0), 0 -6px rgb(255, 255, 0);
+}
+
+#box2 #runaus{
+    margin-top: 110px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.auslogo{
+    width: 650px;
+    height: 630px;
+    margin-top: 50px;
+    margin-left: 230px;
+}
+
+#runaus button{
+    background-color: rgb(255, 255, 255);
+    width: 120px;
+    height: 110px;
+    border-radius: 30px;
+    border: rgb(255, 255, 255) 2px solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color:rgb(226, 226, 0);
+    margin: -50px;
+}
+
+#runaus button:hover{
+    background-color: rgb(226, 226, 0);
+    color: white;
+    cursor: pointer;
+}
+
+#runindia button:focus{
+    outline: none;
+    cursor: pointer;
+}
