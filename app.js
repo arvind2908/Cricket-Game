@@ -110,7 +110,8 @@ const scoreRuns =  (team) => {
             }
         }
         indRunEle.innerHTML = india_runs;
-    } else {
+    } 
+        else {
         if (balls === 13) {
             balls = 0;
             wickets = 0;
