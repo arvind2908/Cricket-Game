@@ -57,7 +57,6 @@ function field(){
     }
 }
 
-
 const scoreRuns =  (team) => {
     let score = getRandomScore();
 
@@ -77,15 +76,15 @@ const scoreRuns =  (team) => {
                 if (india_runs >= target) {
                     window.alert(`2 overs completed. India won the match.`);
                     window.location.reload();
-                    return
+                    return;
                 }
                 window.alert(`2 overs completed. India lost the match`);
                 window.location.reload();
-                return
+                return;
             }
             target = india_runs + 1;
             window.alert(`2 overs completed. Target is ${india_runs + 1}`);
-            return 
+            return; 
         }
         if (score === 0) {
             wickets += 1;
@@ -97,7 +96,7 @@ const scoreRuns =  (team) => {
                 window.alert("You have lost all your wickets! Please, let the other team bat.");
                 indiaBtn.setAttribute("disabled", true);
                 ausBtn.removeAttribute("disabled");
-                return
+                return;
             }
         }
         india_runs+=score;
@@ -110,8 +109,7 @@ const scoreRuns =  (team) => {
             }
         }
         indRunEle.innerHTML = india_runs;
-    } 
-        else {
+    } else {
         if (balls === 13) {
             balls = 0;
             wickets = 0;
@@ -123,15 +121,15 @@ const scoreRuns =  (team) => {
                 if (aus_runs >= target) {
                     window.alert(`2 overs completed. Australia won the match.`);
                     window.location.reload();
-                    return
+                    return;
                 }
                 window.alert(`2 overs completed. Australia lost the match`);
                 window.location.reload();
-                return
+                return;
             }
             window.alert(`2 overs completed. Target is ${aus_runs + 1}`);
             target = aus_runs + 1;
-            return 
+            return; 
         }
         if (score === 0) {
             wickets += 1;
@@ -169,4 +167,5 @@ const getRandomScore = () => {
         random = Math.floor(Math.random() * 10);
     }
     return random;
+
 }
