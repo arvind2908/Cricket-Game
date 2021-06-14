@@ -19,6 +19,8 @@ var ausBtn = document.getElementById("aus");
 var indiaBatFirst = false;
 var ausBatFirst = false;
 
+window.alert("click 'TOSS ICON' to START MATCH");
+
 function toss(){
     var a = Math.round(Math.random());
     if(a==0){
